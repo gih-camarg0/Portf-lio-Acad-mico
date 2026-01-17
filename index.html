@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Acadêmico</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/logo-dourado.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="img/logo-dourado.png" alt="Logo" class="logo-img">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#competencias">Competências</a></li>
+                    <li><a href="https://github.com/gih-camarg0" target="_blank" >Git Hub</a></li>
+                    <li><a href="https://www.linkedin.com/in/giovanna-camargo-5092363a4/" target="_blank">Linkedin</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container header-content">
+            <img src="img/profile-picture.jpeg" alt="Foto Pessoal" class="profile-photo">
+            <div>
+                <h1>Giovanna Maria de Carvalho Camargo</h1>
+                <p>Email: giovanna.m.c.c1@gmail.com | Telefone: (12) 98707-4890</p>
+                <p class="bio">Olá, meu nome é Giovanna, tenho 17 anos, natural de Pindamonhangaba-SP. Atualmente, curso o 3º ano do Ensino Médio junto com o curso técnico em Desenvolvimento de Sistemas. Tenho interesse em tecnologia, programação e estou sempre em busca de aprender novas habilidades na área. Estou construindo minha trajetória profissional com dedicação, curiosidade e vontade de crescer no mercado de TI.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li> Ensino Fundamental I - Escola Municipal Padre Zezinho (2014 - 2018)</li>
+                <li> Ensino Fundamental II - Escola Estadual Eunice Bueno Romeiro (2019 - 2022)</li>
+                <li> Ensino Médio Integrado com Técnico em Desenvolvimento de Sistemas - Etec João Gomes de Araújo (2023 - 2025)</li>
+                <li> Graduação em Análise e Desenvolvimento de Sistemas - Fatec Taubaté (2026 - 2027)</li>
+            </ul>
+        </section>
+
+        <section id="cursos">
+            <h2>Cursos Complementares e Certificações</h2>
+            <ul>
+                <li><a href="certificados/FundamentosTIhardwareSOFTWARE.pdf" target="_blank">Fundamentos de TI: Hardware e Software - Fundação Bradesco (7 hora(s)) / 2023</a></li>
+                <li><a href="certificados/EdiçãoDeFotosVídeosComWindows10.pdf" target="_blank">Edição de fotos e vídeos com windows 10 - Fundação Bradesco (5 hora(s)) / 2025</a></li>
+                <li><a href="certificados/ExcelNaPratica.pdf" target="_blank">Excel na prática - Fundação Bradesco (16 hora(s)) / 2025</a></li>
+                <li><a href="certificados/FotografiasComDispositivos.pdf" target="_blank">Fotografias com dispositivos móveis - Fundação Bradesco (8 hora(s)) / 2025</a></li>
+                <li><a href="certificados/MicrosoftOffice365.pdf" target="_blank">Microsoft Office 365 - Fundação Bradesco (7 hora(s)) / 2025</a></li>
+                <li><a href="certificados/SharePoint.pdf" target="_blank">SharePoint - Fundação Bradesco (2 hora(s)) / 2025</a></li>
+                <li><a href="certificados/EspecializaçãoFormaçãoEmDiscover.pdf" target="_blank">Especialização/Formação em Discover - Rocketseat (12 hora(s)) / 2025</a></li>
+                <li><a href="certificados/ObásicodeGiteGitHub.pdf" target="_blank">Git e GitHub - Rocketseat (1 hora(s)) / 2025</a></li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos Desenvolvidos</h2>
+            <div class="projeto">
+                <h3>Travelgram</h3>
+                <p><strong>Descrição:</strong> Um blog direcionado a apaixonados por volleyball.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript</p>
+                <p><a href=" https://gih-camarg0.github.io/Travelgram/" target="_blank">Acesse o projeto</a></p>
+            </div>
+            <div class="projeto">
+                <h3>DevLinks</h3>
+                <p><strong>Descrição:</strong> Site de armazenamento e compartilhamento de links.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS e JavaScript..</p>
+                <p><a href="https://gih-camarg0.github.io/devlinks/" target="_blank" >Acesse o projeto</a></p>
+            </div>
+            <div class="projeto-andamento">
+                <h3>Site Expositivo | projeto em andamento</h3>
+                <p><strong>Descrição:</strong> Site para a apresentação, seja uma marca ou até mesmo uma banda.</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript.</p>
+            </div>
+        </section>
+
+        <section id="competencias">
+            <h2>Competências</h2>
+            <ul>
+                <li><strong>Técnicas:</strong>HTML5, CSS3, JavaScript, Git, GitHub, Lógica de Programação, Análise de Sistemas, Banco de Dados, Excel, SharePoint, Office</li>
+                <li><strong>Interpessoais:</strong>Proatividade, Organização, Comunicação, Raciocínio lógico, Trabalho em equipe</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Gostaria de fazer contato? Preencha o formulário abaixo</h2>
+            <form action="enviar.php" method="POST" class="Form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Qual sua proposta de projeto:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 by Giovanna Camargo</p>
+    </footer>
+</body>
+</html>

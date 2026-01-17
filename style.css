@@ -1,0 +1,230 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f5f7;
+    color: #0A1F44;
+    line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: #0A1F44;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #CDA349;
+}
+
+/* Header Content */
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding: 20px;
+    background: #ffffff;
+    color: #0A1F44;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #CDA349;
+}
+
+.bio {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Estrutura principal */
+main.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #CDA349;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #CDA349;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Section cursos */
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+/* Links */
+#cursos a {
+    color: #0A1F44;
+    text-decoration: none;
+}
+
+#cursos a:hover {
+    color: #CDA349;
+}
+
+/* Section projetos */
+
+.projeto {
+    background: #ffffff;
+    border-left: 5px solid #CDA349;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.projeto-andamento{
+    background: #ffffff;
+    border-left: 5px solid #0A1F44;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+/* Links */
+.projeto a {
+    color: #0A1F44;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projeto a:hover {
+    color: #CDA349;
+}
+
+/* Formulário de contato */
+.Form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Form label {
+    font-weight: 600;
+}
+
+.Form input,
+.Form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.Form button {
+    background-color: #CDA349;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.Form button:hover {
+    background-color: #b88f36;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0A1F44;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+footer i{
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
